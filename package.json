@@ -10,11 +10,7 @@
     "start": "node lovebirbbot.js"
   },
   "dependencies": {
-    "discord": "^0.8.2",
     "discord.js": "^11.3.2",
-    "request": "^2.87.0",
-    "pm2": "^3.0.3",
-    "npm": "^6.2.0",
-    "forever": "^0.15.3"
+    "request": "^2.87.0"
   }
 }
