@@ -444,7 +444,7 @@ var doggobobsimgIndex = doggobobsimg.length - 1;
 client.on ("message", message =>{
   //Check if the command is being called.
   if(message.content.startsWith("!doggobobs")) { 
-            message.channel.send(":LEWDalarm: :LEWDalarm: THIS DOG IS WILLING TO SHOW YOU THEIR 10 RAMPART BOBS FOR A TREAT...OR TWO! :LEWDalarm: :LEWDalarm:");
+            message.channel.send("THIS DOG IS WILLING TO SHOW YOU THEIR 10 RAMPART BOBS FOR A TREAT...OR TWO!");
             message.channel.send(doggobobsimg[Math.floor((Math.random()*doggobobsimgIndex))]);
   }
 })
