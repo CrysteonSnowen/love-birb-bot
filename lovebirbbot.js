@@ -298,7 +298,6 @@ var riotMedia = ["https://media.giphy.com/media/l2Je06sjaUIu4zTrO/giphy.gif",
                  "https://i.gifer.com/EIf4.gif"
                  ];
 var riotMediaIndex = riotMedia.length - 1;
-
 client.on ("message", message =>{
   //Check if the command is being called.
   if(message.content.startsWith("!riot")) { 
@@ -307,9 +306,7 @@ client.on ("message", message =>{
   }
 })
 
-
-
-
+//ExistentialDoggo
     //Array order: Maggie 0 , Kona 1 , Mara 2, Winter 3, Darwin 4, Luna 5
     var chosenDoggo = ["https://i.imgur.com/ugbz7ag.jpg",
                          "https://i.imgur.com/pq1cbKQ.jpg",
@@ -318,15 +315,11 @@ client.on ("message", message =>{
                          "https://i.imgur.com/ISMzc7g.jpg",
                          "https://i.imgur.com/OxL92oT.jpg"]
 
-        
-
-client.on ("message", message =>{
+    client.on ("message", message =>{
   //Check if the command is being called.
   if(message.content.startsWith("!existentialdoggo")) { 
-
-  
     var doggoOfChoice = Math.floor((Math.random()*(chosenDoggo.length - 1)));
-    
+   
 var sadDoggoQuestions1 = ["Where is the dot?", "What is love?", "What is happiness?", "What is life?", "What is an IPA?", "What is a pizza?"];
 var sadDoggoQuestions2 = ["Why does it elude me?", "What does it mean?", "Should I like or hate it?"];
 var sadDoggoQuestions3 = ["Should I fight for it?", "Should I PROTEC for it?", "Should I ATTAC for it?"];
@@ -425,9 +418,17 @@ client.on ("message", message =>{
   }
 })
 
-
+//!mlem
+client.on ("message", message =>{
+  //Check if the command is being called.
+  if(message.content.startsWith("!mlem")) { 
+            message.channel.send("Mlem...mlem...mlem...");
+            message.channel.send("https://imgur.com/lpw4yps");
+  }
+})
 
 /*
+
 //=========!morning ===========
 client.on ("message", message =>{
   //Check if the command is being called.
