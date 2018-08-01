@@ -221,7 +221,8 @@ client.on ("message", message =>{
 var messagesResponse = ["*Congratulations, you have discovered the fact people talk.....bitch.*",
                         "*Well done, your deductive skills are on point to find out people socialize when you're not around.....bitch.*",
                         "*Bravo, you were able to see through a plethora of messages. You're so smart.....bitch.*",
-                        "*Good job. Your intelligence is on its apex by figuring out people talk when you're absent....bitch.*"];
+                        "*Good job. Your intelligence is on its apex by figuring out people talk when you're absent....bitch.*",
+                       "*Good job. Your intelligence is on its apex by figuring out people talk when you're absent....bitch.*"];
 var messagesResponseIndex = messagesResponse.length - 1;
 
 //!messages ...bitch
@@ -431,7 +432,11 @@ client.on ("message", message =>{
 var doggobobsimg = ["https://i.imgur.com/DDhsqax.jpg",
                     "https://i.imgur.com/VvemdOs.jpg",
                     "https://i.imgur.com/gunI0Q8.jpg",
-                    "https://i.imgur.com/lhtwYzn.jpg"
+                    "https://i.imgur.com/lhtwYzn.jpg",
+                    "https://i.imgur.com/frkN9nl.jpg",
+                    "https://i.imgur.com/ObYMcma.jpg",
+                    "https://i.imgur.com/9xQLdTf.jpg",
+                    "https://i.imgur.com/9xQLdTf.jpg"
                     ];
 
 var doggobobsimgIndex = doggobobsimg.length - 1;
@@ -439,7 +444,7 @@ var doggobobsimgIndex = doggobobsimg.length - 1;
 client.on ("message", message =>{
   //Check if the command is being called.
   if(message.content.startsWith("!doggobobs")) { 
-            message.channel.send("THIS DOG IS WILLING TO SHOW YOU THEIR 10 RAMPART BOBS FOR A TREAT...OR TWO!");
+            message.channel.send(":LEWDalarm: :LEWDalarm: THIS DOG IS WILLING TO SHOW YOU THEIR 10 RAMPART BOBS FOR A TREAT...OR TWO! :LEWDalarm: :LEWDalarm:");
             message.channel.send(doggobobsimg[Math.floor((Math.random()*doggobobsimgIndex))]);
   }
 })
