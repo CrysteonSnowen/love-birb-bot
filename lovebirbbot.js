@@ -427,20 +427,25 @@ client.on ("message", message =>{
   }
 })
 
-/*
+//=====!doggobobs=====
+var doggobobsimg = ["https://i.imgur.com/DDhsqax.jpg",
+                    "https://i.imgur.com/VvemdOs.jpg",
+                    "https://i.imgur.com/gunI0Q8.jpg",
+                    "https://i.imgur.com/lhtwYzn.jpg"
+                    ];
 
-//=========!morning ===========
+var doggobobsimgIndex = doggobobsimg.length - 1;
+
 client.on ("message", message =>{
   //Check if the command is being called.
-  if(message.content.startsWith("!morning")) { 
-           message.channel.send(":sunny: GOOD MORNING! :sunny:");
-           message.channel.send("https://tenor.com/view/goodmorning-screamqueens-emmaroberts-gif-5075899");
+  if(message.content.startsWith("!doggobobs")) { 
+            message.channel.send("THIS DOG IS WILLING TO SHOW YOU THEIR 10 RAMPART BOBS FOR A TREAT...OR TWO!");
+            message.channel.send(doggobobsimg[Math.floor((Math.random()*doggobobsimgIndex))]);
   }
 })
-*/
 
-
-//=========!morning ===========
+/*
+//=========!twiggered ===========
 client.on ("message", message =>{
   //Check if the command is being called.
   if(message.content.startsWith("!twiggered")) { 
@@ -448,7 +453,7 @@ client.on ("message", message =>{
            message.channel.send("https://gyazo.com/273eab8ee4f800f9d9f4b11f043eb681");
   }
 })
-
+//==========ORDER 66 =============
 client.on ("message", message =>{
   //Check if the command is being called.
   if(message.content.startsWith("!order66")) { 
@@ -456,6 +461,7 @@ client.on ("message", message =>{
            message.channel.send("Removing all the Pumpkin Spice related products off the market... COMPLETED");
   }
 })
+*/
 
 /*
 https://cdn.discordapp.com/attachments/460183278268317698/471368916153925662/image.gif
