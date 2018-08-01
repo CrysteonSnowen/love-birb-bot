@@ -436,7 +436,8 @@ var doggobobsimg = ["https://i.imgur.com/DDhsqax.jpg",
                     "https://i.imgur.com/frkN9nl.jpg",
                     "https://i.imgur.com/ObYMcma.jpg",
                     "https://i.imgur.com/9xQLdTf.jpg",
-                    "https://i.imgur.com/9xQLdTf.jpg"
+                    "https://i.imgur.com/b0jKSpD.jpg",
+                    "https://i.imgur.com/b0jKSpD.jpg"
                     ];
 
 var doggobobsimgIndex = doggobobsimg.length - 1;
@@ -444,7 +445,7 @@ var doggobobsimgIndex = doggobobsimg.length - 1;
 client.on ("message", message =>{
   //Check if the command is being called.
   if(message.content.startsWith("!doggobobs")) { 
-            message.channel.send("THIS DOG IS WILLING TO SHOW YOU THEIR 10 RAMPART BOBS FOR A TREAT...OR TWO!");
+            message.channel.send("THIS DOG IS WILLING TO SHOW YOU THEIR 10 RAMPANT BOBS FOR A TREAT...OR TWO!");
             message.channel.send(doggobobsimg[Math.floor((Math.random()*doggobobsimgIndex))]);
   }
 })
