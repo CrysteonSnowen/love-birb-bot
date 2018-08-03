@@ -17,7 +17,7 @@ client.on ("message", message =>{
   //Check if the command is being called.
   if(message.content.startsWith("!lovebirbbothelp")) { 
            message.author.sendMessage("Hi. My current available commands are the following:")
-           message.author.sendMessage("User dependent commands: \n - !compliment Discord User \n - !loveletter Discord User \n  Dogs related commands: \n - !doggobobs \n - !hunted \n - !mlem \n - !existentialdoggo \n - !maggiemoo \n - !maggiestatus \n - !konaasmr \n Other commands: \n - !riot - !smolgift \n - !delusional")
+           message.author.sendMessage("User dependent commands: \n - !compliment Discord User \n - !loveletter Discord User \n Dogs related commands: \n - !doggobobs \n - !hunted \n - !mlem \n - !existentialdoggo \n - !maggiemoo \n - !maggiestatus \n - !konaasmr \n Other commands: \n - !riot \n - !smolgift \n - !delusional")
      }
   })
 
