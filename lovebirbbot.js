@@ -11,6 +11,17 @@ client.login(process.env.BOT_TOKEN);
 client.setMaxListeners(50);
 
 //================================  COMMANDS  =========================================
+
+//=========HELP COMMAND===========
+client.on ("message", message =>{
+  //Check if the command is being called.
+  if(message.content.startsWith("!lovebirbbothelp")) { 
+           message.author.sendMessage("Hi. My current available commands are the following:")
+           message.author.sendMessage("!compliment Discord User, !loveletter Discord User, !doggobobs, !hunted, !mlem !riot, !smolgift, !existentialdoggo, !maggiemoo, !maggiestatus, !konaasmr, !delusional")
+     }
+  })
+
+
 //========= !compliment + mentioned user ===========
 //compliment dictionary
 var compliment = ["breathtaking", "stunning", "fabulous",  "fantastic","incandescent", "bold",
@@ -230,14 +241,6 @@ client.on ("message", message =>{
   //Check if the command is being called.
   if(message.content.startsWith("!messages")) { 
             message.channel.send(messagesResponse[Math.floor((Math.random()*messagesResponseIndex))]);
-  }
-})
-
-//Titty Sprinkles
-client.on ("message", message =>{
-  //Check if the command is being called.
-  if(message.content.startsWith("!tittysprinkles")) { 
-            message.channel.send("https://www.youtube.com/watch?v=-04Cm9MxwSs");
   }
 })
 
