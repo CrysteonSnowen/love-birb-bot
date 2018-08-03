@@ -299,7 +299,19 @@ var riotMedia = ["https://media.giphy.com/media/l2Je06sjaUIu4zTrO/giphy.gif",
                  "https://www.tenor.co/unmc.gif",
                  "https://78.media.tumblr.com/91e3ee60d4a405fe1e4838c463dd7585/tumblr_o3zsdyIsYW1rjbmxro1_500.gif",
                  "https://ionehellobeautiful.files.wordpress.com/2014/03/throw-table-catch-chair.gif",
-                 "https://i.gifer.com/EIf4.gif"
+                 "https://i.gifer.com/EIf4.gif",
+                 "https://media.tenor.com/images/1ea12b4225d45db752ac3915547e538e/tenor.gif",
+                 "https://media1.tenor.com/images/1c6ea33e9caa04f76417193521d50ff4/tenor.gif",
+                 "https://media.giphy.com/media/IW03ZxGkdRzUY/giphy.gif",
+                 "https://i.kym-cdn.com/photos/images/original/001/280/763/09b.gif",
+                 "https://i.kym-cdn.com/photos/images/original/001/338/785/246.gif",
+                 "https://media.giphy.com/media/O1OU8EoNUmIYo/giphy.gif",
+                 "https://i.imgur.com/yI06qH4.gif",
+                 "https://i.gifer.com/TMXy.gif",
+                 "http://49.media.tumblr.com/c686f84152a12bb0d34a84c9763aa7cf/tumblr_nb4gv3Sf0a1tsf68ao1_400.gif",
+                 "http://49.media.tumblr.com/2fa119b1b406dab0d96a3a80fe4f27db/tumblr_nb4gv3Sf0a1tsf68ao3_400.gif",
+                 "http://www.gifbin.com/bin/062011/1308916121_rioter_gets_tackled.gif",
+                 "https://media.giphy.com/media/iEpv70iGzf3Nu/giphy.gif"
                  ];
 var riotMediaIndex = riotMedia.length - 1;
 client.on ("message", message =>{
