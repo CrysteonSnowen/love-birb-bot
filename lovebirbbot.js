@@ -426,24 +426,23 @@ var darwinlunaConclusion = "My questions are as endless as the universe...";
     )       
 
 //MaggieStatus
-
-    client.on ("message", message =>{
+   client.on ("message", message =>{
   //Check if the command is being called.
   if(message.content.startsWith("!maggiestatus")) { 
+            message.channel.send("Yes...");
+            message.channel.send("https://www.youtube.com/watch?v=cS3lgsNFDqU");
+    
     var maggieOptions = 15
-    var maggieChoice = Math.floor((Math.random() * maggieOptions);
+    var maggieChoice = Math.floor((Math.random() * maggieOptions));
     //message.channel.send("Fetching Maggie's current status...please wait..."]);
     var maggieMessage = "";
-
-    switch(maggieChoice) {
-
-      case 0:
+     switch(maggieChoice) {
+       case 0:
 	maggieMessage = "Maggie is currently recharging under the sunlight."
         message.channel.send(maggieMessage); 
         message.channel.send("https://i.imgur.com/b2p5Fol.jpg"); 
       break;
-
-      case 1:  
+       case 1:  
 	maggieMessage = "Maggie is cuddling with Steven inappropiately...wait...Maggie! This is not that kind of command!"
         message.channel.send(maggieMessage); 
         message.channel.send("https://i.imgur.com/fxKkviO.png"); 
@@ -454,8 +453,7 @@ var darwinlunaConclusion = "My questions are as endless as the universe...";
         message.channel.send(maggieMessage); 
         message.channel.send("https://i.imgur.com/fuHvNNO.jpg"); 
       break;
-
-      case 3:
+       case 3:
 	maggieMessage = "Maggie is currently posing for doggo Tinder as twinkie_sprinkles!"
         message.channel.send(maggieMessage); 
         message.channel.send("https://i.imgur.com/ekKiGpP.jpg"); 
@@ -466,79 +464,67 @@ var darwinlunaConclusion = "My questions are as endless as the universe...";
         message.channel.send(maggieMessage); 
         message.channel.send("https://i.imgur.com/6MdpHK7.png"); 
       break;
-
-      case 5:
+       case 5:
 	maggieMessage = "Maggie is currently hiding from mommy for accidentally eating Kona's food plate....she was hungry, okay?"
         message.channel.send(maggieMessage); 
         message.channel.send("https://i.imgur.com/Dq8QDYd.jpg"); 
       break;
-
-      case 6:
+       case 6:
 	maggieMessage = "Maggie is currently pretending to be Kona."
         message.channel.send(maggieMessage); 
         message.channel.send("https://i.imgur.com/K1vUenU.jpg"); 
       break;
-
-      case 7:
+       case 7:
 	maggieMessage = "Maggie is currently negotiating with hooman about getting more treats or being obliged to perform a riot around the house."
         message.channel.send(maggieMessage); 
         message.channel.send("https://i.imgur.com/ugbz7ag.jpg"); 
       break;
-
-      case 8:
+       case 8:
 	maggieMessage = "Maggie is currently being comfy. Do not disturb the majestic creature."
         message.channel.send(maggieMessage); 
         message.channel.send("https://i.imgur.com/SXOrraq.jpg"); 
       break;
-
-      case 9:
+       case 9:
 	maggieMessage = "Maggie, Kona and Doggo Mom are posing for the camera for a really cute picture!"
         message.channel.send(maggieMessage); 
         message.channel.send("https://i.imgur.com/uvJPqjM.jpg"); 
       break;
-
-      case 10:
+       case 10:
 	maggieMessage = "Maggie went out for a swimmie and now she looks like a ferocious otter beast willing to rip you apart for treats!"
         message.channel.send(maggieMessage); 
         message.channel.send("https://i.imgur.com/pLm2vlS.jpg"); 
       break;
-
-      case 11:
+       case 11:
 	maggieMessage = "Maggie is taking a nap after a really long day in college (because college girls wear shirts to cover their bobs)." 
         message.channel.send(maggieMessage); 
         message.channel.send("https://i.imgur.com/Natv0RP.jpg"); 
       break;
-
-      case 12:
+       case 12:
 	maggieMessage = "Maggie is giving us the side eyes for finding out Doggo Mom is making her eat low calories dog food." 
         message.channel.send(maggieMessage); 
         message.channel.send("https://i.imgur.com/OpHZFfb.jpg"); 
       break;
-
-      case 13:
+       case 13:
 	maggieMessage = "It looks like Maggie is getting ready for a walk, or a party, or to simply go outside, given her notorious goblin ears." 
         message.channel.send(maggieMessage); 
         message.channel.send("https://i.imgur.com/HQDKY8h.jpg"); 
       break;
-
-      case 14:
+       case 14:
 	maggieMessage = "Ah! Who might this be? Is it Maggie or...is it the famous streamer twinkie_sprinkles posing for the camera with Kona?" 
         message.channel.send(maggieMessage); 
         message.channel.send("https://i.imgur.com/xnpelbZ.jpg"); 
       break;
-
-      case 15:
+       case 15:
 	maggieMessage = "Maggie is currently taking a selfie." 
         message.channel.send(maggieMessage); 
         message.channel.send("https://i.imgur.com/M8uykix.jpg"); 
       break;
-
-      default: message.channel.send("Looks like doggos are taking a break. Please come back later.");
+       default: message.channel.send("Looks like doggos are taking a break. Please come back later.");
         
     }
     }
   }
-    )       
+)
 
 
 //!mlem
