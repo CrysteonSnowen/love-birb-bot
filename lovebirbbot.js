@@ -430,7 +430,7 @@ var darwinlunaConclusion = "My questions are as endless as the universe...";
   //Check if the command is being called.
   if(message.content.startsWith("!maggiestatus")) { 
    
-    var maggieOptions = 15
+    var maggieOptions = 16
     var maggieChoice = Math.floor((Math.random() * maggieOptions));
     //message.channel.send("Fetching Maggie's current status...please wait..."]);
     var maggieMessage = "";
@@ -517,6 +517,12 @@ var darwinlunaConclusion = "My questions are as endless as the universe...";
         message.channel.send(maggieMessage); 
         message.channel.send("https://i.imgur.com/M8uykix.jpg"); 
       break;
+       case 16:
+	maggieMessage = "Maggie is tired after a walk and a swim. If treats are offered, she will awaken; otherwise, doneflop." 
+        message.channel.send(maggieMessage); 
+        message.channel.send("https://i.imgur.com/MOixT2m.jpg"); 
+      break;   
+		     
        default: message.channel.send("https://www.youtube.com/watch?v=cS3lgsNFDqU");
         
     }
