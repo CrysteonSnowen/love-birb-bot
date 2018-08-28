@@ -535,6 +535,73 @@ var darwinlunaConclusion = "My questions are as endless as the universe...";
   }
 )
 
+//KonaStatus
+   client.on ("message", message =>{
+  //Check if the command is being called.
+  if(message.content.startsWith("!konastatus")) { 
+   
+    var konaOptions = 9
+    var konaChoice = Math.floor((Math.random() * konaOptions));
+    var konaMessage = "";
+	  
+     switch(konaChoice) {
+       case 0:
+	konaMessage = "Kona is currently lost in thought. Deep inside, you can feel her questioning existence itself in an eloquent and wise fashion... \n"
+        message.channel.send(konaMessage + " *A tree does not grow because one watches and wills it to. A tree grows because it is a tree and craves the sun. If I stop watching and willing, will I to grow? But I do not crave the sun. What must I work towards to grow like the tree grows towards sun? Will I find it or will it find me?*"); 
+        message.channel.send("https://i.imgur.com/F1Eo8kM.jpg"); 
+      break;
+       case 1:  
+	konaMessage = "Kona is currently meditating the meaning of all things. Deep inside, you're able to hear her thoughts...\n"
+        message.channel.send(konaMessage + " *Take a stone. That stone was once large, and part of something greater. But now the stone is small. But does that mean it isn’t part of something greater anymore? This stone may be small, but it is now unique and free the roam the world (if it had legs).*"); 
+        message.channel.send("https://i.imgur.com/WQNYPng.jpg"); 
+      break;
+       case 2:  
+	konaMessage = "Kona just went for a swimmie, but there seems to be something that is bothering her. What would it be? ...\n"
+        message.channel.send(konaMessage + " *While one cannot see the air or the wind, one always knows it is there, and that it is important. Do not fret if you are not always there, or if someone is not always there. Like the air and the wind, they are important, and so are you. But farts are not. They just smell.*"); 
+        message.channel.send("https://i.imgur.com/wmX5NAK.jpg"); 
+      break;
+       case 3:
+	konaMessage = "Kona may seem distressed for the kitty that is sitting close to her, but in fact she has attained a state of stillness. Inside her head, she states the following haiku: \n"
+        message.channel.send(konaMessage + " *Curl into donut / I become a deep black hole / I am the Konut*"); 
+        message.channel.send("https://i.imgur.com/d66hdYl.jpg"); 
+      break; 
+      case 4:
+	konaMessage = "Kona has found a stick to bite. As she chews it peacefully, you can feel her wisdom grasped as a haiku... \n"
+        message.channel.send(konaMessage + " *This stick is the best / But the door does not think so / It will not stop me.*"); 
+        message.channel.send("https://i.imgur.com/mT7xUtl.jpg"); 
+      break;
+       case 5:
+	konaMessage = "Kona and Maggie are taking some rest after a walkie; however, a fiendish aroma pollutes the air around them...Kona describes the situation as follows:  \n"
+        message.channel.send(konaMessage + " *There was a bad smell / Maggie was sat next to me / I blamed it on her.*"); 
+        message.channel.send("https://i.imgur.com/6dXhTRw.jpg"); 
+      break;
+       case 6:
+	konaMessage = "Kona's anxiety has been bad lately to the point Doggo Mom had to give her some medicine. Her mind may be a mess, but for some reason you're able to feel her confusion... \n"
+        message.channel.send(konaMessage + " *High in the sky there are birds. And there are large noisy birds. And sometimes there are balls floating like clouds. I aspire to catch those balls, but they are out of my reach. Oh ball in the sky, one day I shall too float high like you, and finally catch you. Then bury you. And probably lose you. But at least I will have caught you, finally.*"); 
+        message.channel.send("https://i.imgur.com/Nq5xlx2.jpg"); 
+      break;
+       case 7:
+	konaMessage = "Kona and Maggie are taking a break after playing so much outside. It looks like Kona is inspired by her experience today:  \n"
+        message.channel.send(konaMessage + " *They say the night is dark, but one must look at the night to see how truly bright it is. While the day has one bright like, the night is filled with many lights. Thousands of stars, a bright moon, planets, and even bright objects the hoomans have put in the sky. You are never alone during the dark night, and there are always lights shining bright for you.*"); 
+        message.channel.send("https://i.imgur.com/InykM20.jpg"); 
+      break;
+       case 8:
+	konaMessage = "Kona feels concerned about her most recent experience outside. Deep inside, you can feel her stress for doggo mom's veredict...  \n"
+        message.channel.send(konaMessage + " *I chased a bag into a hedgerow once. The hedgerow bit my nose. Does the hedgerow think I am a bad dog? But mom always says I am a good dog. Can one be both a good and bad dog at the same time? Maybe there are many facets to oneself, but the important one is that you feel like you are a good dog. If you can feel like that, no hedgerow can make you feel like a bad dog.*"); 
+        message.channel.send("https://i.imgur.com/pq1cbKQ.jpg"); 
+      break;
+       case 9:
+	konaMessage = "Kona, Maggie and Doggo Mom are posing for the camera for a really cute picture! Words cannot express Kona's emotions right now...excluding her massive despair for being stuck in a car for a couple hours..."
+        message.channel.send(konaMessage); 
+        message.channel.send("https://i.imgur.com/uvJPqjM.jpg"); 
+      break;   
+       default: message.channel.send("Something happened...Is this the end? Why did the command fail? What happened to Kona's wisdom? Why is Maggie fat? Kona has so many questions...");
+        
+    }
+    }
+  }
+)
+
 
 //!mlem
 client.on ("message", message =>{
