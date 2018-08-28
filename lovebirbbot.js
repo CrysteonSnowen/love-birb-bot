@@ -582,7 +582,7 @@ var darwinlunaConclusion = "My questions are as endless as the universe...";
       break;
        case 7:
 	konaMessage = "Kona and Maggie are taking a break after playing so much outside. It looks like Kona is inspired by her experience today:  \n"
-        message.channel.send(konaMessage + " *They say the night is dark, but one must look at the night to see how truly bright it is. While the day has one bright like, the night is filled with many lights. Thousands of stars, a bright moon, planets, and even bright objects the hoomans have put in the sky. You are never alone during the dark night, and there are always lights shining bright for you.*"); 
+        message.channel.send(konaMessage + " *They say the night is dark, but one must look at the night to see how truly bright it is. While the day has one bright light, the night is filled with many lights. Thousands of stars, a bright moon, planets, and even bright objects the hoomans have put in the sky. You are never alone during the dark night, and there are always lights shining bright for you.*"); 
         message.channel.send("https://i.imgur.com/InykM20.jpg"); 
       break;
        case 8:
