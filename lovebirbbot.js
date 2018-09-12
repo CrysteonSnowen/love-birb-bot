@@ -635,6 +635,15 @@ client.on ("message", message =>{
   }
 })
 
+client.on ("message", message =>{
+  //Check if the command is being called.
+  if(message.content.startsWith("!gay")) { 
+            message.channel.send("Hah...GAAAAAAAAAAAAAAAAAYY!");
+            message.channel.send("https://i.kym-cdn.com/photos/images/original/000/286/095/be7.gif");
+  }
+})
+
+
 /*
 //=========!twiggered ===========
 client.on ("message", message =>{
