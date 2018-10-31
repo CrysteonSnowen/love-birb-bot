@@ -460,6 +460,15 @@ client.on ("message", message =>{
   }
 )
 
+//Toikeylaig
+client.on ("message", message =>{
+  //Check if the command is being called.
+  if(message.content.startsWith("!toikeylaig")) { 
+            message.channel.send("When Maggatees are caught in deep slumber, it is said they experience a series of physical reflexes on their paws and legs, presumably named the toikey laigs. With the help of top-tier technology, it was possible to capture the exact moment hen this happen on these kind of orgnanism. Mesmerizing...")
+            message.channel.send("https://i.imgur.com/xr18Vtb.mp4");
+  }
+})
+
 //KonaStatus
    client.on ("message", message =>{
   //Check if the command is being called.
