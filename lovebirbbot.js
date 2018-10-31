@@ -190,15 +190,6 @@ client.on ("message", message =>{
   }
 })
 
-//========= !delusional ===========
-client.on ("message", message =>{
-  //Check if the command is being called.
-  if(message.content.startsWith("!delusional")) { 
-           message.channel.send("You know something is wrong when you change topics that quickly....");
-           message.channel.send("https://clips.twitch.tv/JazzyBlindingKuduFUNgineer?tt_medium=clips_api&tt_content=url");
-  }
-})
-
 //========= !smolgift ===========
 client.on ("message", message =>{
   //Check if the command is being called.
@@ -322,115 +313,12 @@ client.on ("message", message =>{
   }
 })
 
-//ExistentialDoggo
-    //Array order: Maggie 0 , Kona 1 , Mara 2, Winter 3, Darwin 4, Luna 5
-    var chosenDoggo = ["https://i.imgur.com/ugbz7ag.jpg",
-                         "https://i.imgur.com/pq1cbKQ.jpg",
-                         "https://i.imgur.com/ElWF9ze.jpg",
-                         "https://i.imgur.com/p7VR1Jz.jpg",
-                         "https://i.imgur.com/ISMzc7g.jpg",
-                         "https://i.imgur.com/OxL92oT.jpg"]
-
-    client.on ("message", message =>{
-  //Check if the command is being called.
-  if(message.content.startsWith("!existentialdoggo")) { 
-    var doggoOfChoice = Math.floor((Math.random()*(chosenDoggo.length - 1)));
-   
-var sadDoggoQuestions1 = ["Where is the dot?", "What is love?", "What is happiness?", "What is life?", "What is an IPA?", "What is a pizza?"];
-var sadDoggoQuestions2 = ["Why does it elude me?", "What does it mean?", "Should I like or hate it?"];
-var sadDoggoQuestions3 = ["Should I fight for it?", "Should I PROTEC for it?", "Should I ATTAC for it?"];
-var sadDoggoQuestions4 = ["Why is Maggie fat?", "Why is Winter crazy?", "Why is Milo so cute?"];
-var sadDoggoQuestions5 = ["What is mommy doing talking to the shiny box?", "Why is mommy talking to herself?", "Why is my butt so itchy?"];
-var sadDoggoConclusion = "I have so many questions...";
-
-var maggieQuestions1 = ["Do you like walks? Do you like outside? Do you like treats? Do you like face mushes? Do you like to open bobs? Do you like parties?. K hooman I luv u bai."
-                        , "Well, hooman....Treats or riot? What is your choice?", 
-                        "*frantic tail wag*"];
-
-var winterQuestions1 = ["What is this doing here?", "What should I do with this?"]
-var winterQuestions2 = ["Why is hooman sassing me?", "Why does hooman look at me expecting me to do something?", "Why is hooman looking at me like that?"];
-var winterQuestions3 = ["Why is Mara sad?", "Why is Kona sad?", "Why is Maggie fat?", "Why is Milo so cute?"];
-var winterQuestions4 = ["Should I dig a hole?", "Should I talk back to hooman?", "Should I sass hooman?"];
-var winterConclusion= "I think hooman is borken..."
-
-var darwinlunaQuestions1 = ["Why is mommy looking to the sky?", "What's an UFO?", "What's a quasar?", "What's a black hole?"];
-var darwinlunaQuestions2 = ["Why does hooman scream SPAAAACEEEE?", "Why is my butt so itchy?", "Is the Milky Way a farm for cows?"];
-var darwinlunaQuestions3 = ["What's this thing about stars and planets?", "Why does hooman talk to the shiny box?", "Why is hooman talking to herself?"];
-var darwinlunaQuestions4 = ["Where are my treats?", "Where are my toys?", "Did I just fart...?"];
-var darwinlunaConclusion = "My questions are as endless as the universe...";
-
-    switch(doggoOfChoice) {
-
-//Maggie
-      case 0:
-        message.channel.send(chosenDoggo[0]); 
-        message.channel.send(maggieQuestions1[Math.floor(Math.random()*(maggieQuestions1.length - 1))]); 
-      break;
-//Kona or Mara
-      case 1:  
-        message.channel.send(chosenDoggo[1]); 
-        message.channel.send(sadDoggoQuestions1[Math.floor(Math.random()*(sadDoggoQuestions1.length - 1))] + " " +
-                             sadDoggoQuestions2[Math.floor(Math.random()*(sadDoggoQuestions2.length - 1))] + " " +
-                             sadDoggoQuestions3[Math.floor(Math.random()*(sadDoggoQuestions3.length - 1))] + " " +
-                             "Why is Maggie fat? " +
-                             sadDoggoQuestions5[Math.floor(Math.random()*(sadDoggoQuestions5.length - 1))] + " " +
-                             sadDoggoConclusion 
-                             ); 
-      break;
-        
-      case 2:  
-        message.channel.send(chosenDoggo[2]); 
-        message.channel.send(sadDoggoQuestions1[Math.floor(Math.random()*(sadDoggoQuestions1.length - 1))] + " " +
-                             sadDoggoQuestions2[Math.floor(Math.random()*(sadDoggoQuestions2.length - 1))] + " " +
-                             sadDoggoQuestions3[Math.floor(Math.random()*(sadDoggoQuestions3.length - 1))] + " " +
-                             "Why is Winter crazy? " +
-                             sadDoggoQuestions5[Math.floor(Math.random()*(sadDoggoQuestions5.length - 1))] + " " +
-                             sadDoggoConclusion 
-                             ); 
-      break;
-//Winter
-      case 3:
-        message.channel.send(chosenDoggo[3]); 
-        message.channel.send(winterQuestions1[Math.floor(Math.random()*(winterQuestions1.length - 1))] + " " +
-                             winterQuestions2[Math.floor(Math.random()*(winterQuestions2.length - 1))] + " " +
-                             "Why is Mara sad? " +
-                             winterQuestions4[Math.floor(Math.random()*(winterQuestions4.length - 1))] + " " +
-                             winterConclusion 
-                             ); 
-      break;
-        
-//Darwin and Luna
-      case 4:
-        message.channel.send(chosenDoggo[4]); 
-        message.channel.send(darwinlunaQuestions1[Math.floor(Math.random()*(darwinlunaQuestions1.length - 1))] + " " +
-                             darwinlunaQuestions2[Math.floor(Math.random()*(darwinlunaQuestions2.length - 1))] + " " +
-                             darwinlunaQuestions3[Math.floor(Math.random()*(darwinlunaQuestions3.length - 1))] + " " +
-                             darwinlunaQuestions4[Math.floor(Math.random()*(darwinlunaQuestions4.length - 1))] + " " +
-                             darwinlunaConclusion
-                             ); 
-      break;
-      case 5:
-        message.channel.send(chosenDoggo[5]); 
-        message.channel.send(darwinlunaQuestions1[Math.floor(Math.random()*(darwinlunaQuestions1.length - 1))] + " " +
-                             darwinlunaQuestions2[Math.floor(Math.random()*(darwinlunaQuestions2.length - 1))] + " " +
-                             darwinlunaQuestions3[Math.floor(Math.random()*(darwinlunaQuestions3.length - 1))] + " " +
-                             darwinlunaQuestions4[Math.floor(Math.random()*(darwinlunaQuestions4.length - 1))] + " " +
-                             darwinlunaConclusion 
-                             ); 
-      break;
-      default: message.channel.send("Looks like doggos are taking a break. Please come back later.");
-        
-                      }
-    }
-  }
-    )       
-
 //MaggieStatus
    client.on ("message", message =>{
   //Check if the command is being called.
   if(message.content.startsWith("!maggiestatus")) { 
    
-    var maggieOptions = 17
+    var maggieOptions = 24
     var maggieChoice = Math.floor((Math.random() * maggieOptions));
     //message.channel.send("Fetching Maggie's current status...please wait..."]);
     var maggieMessage = "";
@@ -526,7 +414,44 @@ var darwinlunaConclusion = "My questions are as endless as the universe...";
 	maggieMessage = "Maggie is tired after a walk and a swim. If treats are offered, she will awaken; otherwise, doneflop." 
         message.channel.send(maggieMessage); 
         message.channel.send("https://i.imgur.com/MOixT2m.jpg"); 
-      break;   
+      break; 
+	case 18:
+	maggieMessage = "Maggie is currently taking a nap after working so hard for her stream.As you can see, she is using Kona's butt as her personal pillow." 
+        message.channel.send(maggieMessage); 
+        message.channel.send("https://i.imgur.com/kAPw2du.jpg"); 
+      break; 
+	case 19:
+	maggieMessage = "Maggie is taking a nap while performing her famous and epic flopear unicorn pose. As you can see, she is using Steven as her personal pillow." 
+        message.channel.send(maggieMessage); 
+        message.channel.send("https://i.imgur.com/LH8ssEr.jpg"); 
+      break; 
+	case 20:
+	maggieMessage = "Maggie is roleplaying as a goblin taking care of a bridge. If treats are provided, the goblin-eared behemoth shall let you pass; if not...nothing will happen and the beast will not move." 
+        message.channel.send(maggieMessage); 
+        message.channel.send("https://i.imgur.com/RuWuxaG.jpg"); 
+      break;
+	case 21:
+	maggieMessage = "Maggie is performing the legendary flopear unicorn pose in order to assert dominance against the Roomba." 
+        message.channel.send(maggieMessage); 
+        message.channel.send("https://i.imgur.com/tmxMhoW.jpg"); 
+      break;
+	case 22:
+	maggieMessage = "Maggie and Kona are confined in doggo jail. The golden one is emitting Chewbacca noises as a consequence of this transgression. Bonus points if you're able to spot Kona." 
+        message.channel.send(maggieMessage); 
+        message.channel.send("https://i.imgur.com/fQXEZtO.jpg"); 
+      break;
+	case 23:
+	maggieMessage = "Maggie is unable to even. She just can't....even." 
+        message.channel.send(maggieMessage); 
+        message.channel.send("https://i.imgur.com/YwCf1sr.jpg"); 
+      break;
+	case 24:
+	maggieMessage = "Maggie is taking another selfie for doggo Tinder. This one in particular looks very artful." 
+        message.channel.send(maggieMessage); 
+        message.channel.send("https://i.imgur.com/fVqkFsK.jpg"); 
+      break;
+	
+		     
 		     
        default: message.channel.send("https://www.youtube.com/watch?v=cS3lgsNFDqU");
         
