@@ -577,16 +577,90 @@ client.on ("message", message =>{
   }
 })
 
+//========= !roast + mentioned user ===========
+//first roast dictionary
+var roast1 = ["your ass must be pretty jealous of all the shit that comes out of your mouth",
+			  "if you're waiting for me to care, I hope you brought something to eat, ‘cause it's gonna be a really long time",
+			  "sometimes it's better to keep your mouth shut and give the impression that you're stupid than open it and remove all doubt",
+			  "I’m trying my absolute hardest to see things from your perspective, but I just can’t get my head that far up my ass",
+			  "I don’t know what your problem is, but I’m guessing it’s hard to pronounce",
+			  "everyone’s entitled to act stupid once in awhile, but you really abuse the privilege",
+			  "are you constipated? I ask because I’m worried about how full of shit you are",
+			  "do you ever wonder what life would be like if you’d gotten enough oxygen at birth",
+			  "were you born on the highway? That is where most accidents happen",
+			  "the only way you’ll ever get laid is if you crawl up a chicken’s ass and wait",
+			  "if ignorance is bliss, you must be the happiest person on the planet",
+			  "there are some remarkably dumb people in this world. Thanks for helping me understand that",
+              "I was pro life. Then I met you",
+			  "whenever we hang out, I remember that God really does have a sense of humor",
+			  "I was hoping for a battle of wits but it would be wrong to attack someone who’s totally unarmed",
+			  "I’d tell you how I really feel, but I wasn’t born with enough middle fingers to express myself in this case",
+			  "I’d tell you to go fuck yourself, but that would be cruel and unusual punishment",
+			  "your family tree must be a cactus ‘cause you’re all a bunch of pricks",
+			  "I was going to give you a nasty look but I see that you’ve already got one",
+			  "Earth is full. Go home",
+			  "I believed in evolution until I met you",
+			  "it’s a shame you can’t Photoshop your personality",
+			  "take a deep breath and then hold it for about thirty minutes",
+			  "jealousy is a disease, so get well soon"
+			  ];
 
-/*
-//=========!twiggered ===========
+//second roast dictionary
+var roast2 = ["don’t you get tired of putting make up on two faces every morning?",
+			  "remember when I asked for your opinion? Me neither",
+			  "I’m not a proctologist, but I know an asshole when I see one.", 
+			  "do yourself a favor and ignore anyone who tells you to be yourself. Bad idea in your case",
+			  "do your parents even realize they’re living proof that two wrongs don’t make a right?",
+			  "remember that time I said I thought you were cool? I lied",
+			  "I can’t help imagining how much awesomer the world would be if your dad had just pulled out",
+              "please, save your breath. You’ll probably need it to blow up your next date",
+			  "good story, but in what chapter do you shut the fuck up?",
+			  "it’s kind of hilarious watching you try to fit your entire vocabulary into one sentence",
+			  "you always bring me so much joy as soon as you go offline on Discord",
+			  "stupidity’s not a crime, so feel free to go nuts",
+			  "people like you are the reason I’m on medication",
+			  "if I threw a stick, you’d leave, right?",
+			  "my business is my business. Unless you’re a thong, get out of my ass",
+			  "I don’t sugarcoat shit. I’m not Willy Wonka",
+			  "you have more faces than Mount Rushmore",
+			  "maybe you should eat make-up so you’ll be pretty on the inside too",
+			  "my middle finger gets a boner every time I see you",
+			  "whoever told you to be yourself gave you really bad advice",
+			  "where’s your off button?"
+			   ];
+
+			   
+var linkWord = ["By the way...", "Also...", "Oh yeah...", "In fact...", "As a matter of fact...", "Actually...", "In case you weren't aware..." ];
+
+			   			   
+var roast1Index = roast1.length - 1;
+var roast2Index = roast2.length - 1;
+var linkWordIndex = linkWord.length - 1;
+
+
 client.on ("message", message =>{
   //Check if the command is being called.
-  if(message.content.startsWith("!twiggered")) { 
-           message.channel.send("I'M SO HECKING TWIGGERED! SO MUCH ANGERY!!!");
-           message.channel.send("https://gyazo.com/273eab8ee4f800f9d9f4b11f043eb681");
+  if(message.content.startsWith("!sassypantsbiatch")) { 
+   
+    //Check if the message has a mention in it.
+    if(message.mentions.users.first()) { 
+          //Search for that specific user ID in the Discord channel list and construct the message.
+          let user = message.mentions.users.first();
+          //Message Structure: "Hey, ____(Discord User), Roast 1. By the way, 2." 
+          message.channel.send("Hey, " + user + ", " + roast1[Math.floor((Math.random()*roast1Index))] 
+                               + ". " + linkWord[Math.floor((Math.random()*linkWordIndex))] 
+                               + roast2[Math.floor((Math.random()*roast2Index))] 
+                               + ".");
+                                       } 
+    else {
+      //Throws an exception for not providing a correct User ID.
+          message.reply("Provide a valid Discord username while using this command, you fool."); //Reply with a mention saying "Invalid user."
+    }  
+    }
   }
-})
+)
+
+/*
 //==========ORDER 66 =============
 client.on ("message", message =>{
   //Check if the command is being called.
