@@ -12,16 +12,6 @@ client.setMaxListeners(50);
 
 //================================  COMMANDS  =========================================
 
-//=========HELP COMMAND===========
-client.on ("message", message =>{
-  //Check if the command is being called.
-  if(message.content.startsWith("!lovebirbbothelp")) { 
-           message.author.sendMessage("Hi. My current available commands are the following:")
-           message.author.sendMessage("User dependent commands: \n - !compliment Discord User \n - !loveletter Discord User \n Dogs related commands: \n - !doggobobs \n - !hunted \n - !mlem \n - !existentialdoggo \n - !maggiemoo \n - !maggiestatus \n - !konaasmr \n Other commands: \n - !riot \n - !smolgift \n - !delusional")
-     }
-  })
-
-
 //========= !compliment + mentioned user ===========
 //compliment dictionary
 var compliment = ["breathtaking", "stunning", "fabulous",  "fantastic","incandescent", "bold",
@@ -103,7 +93,7 @@ client.on ("message", message =>{
     }
   }
 )
-
+/*
 //========= !maggiemoo ===========
 var mooclip = ["https://clips.twitch.tv/SpicyGlutenFreeOstrichWoofer",
                "https://clips.twitch.tv/HedonisticShakingSalmonTakeNRG",
@@ -189,6 +179,7 @@ client.on ("message", message =>{
            message.channel.send(mooclip[Math.floor((Math.random()*mooIndex))]);
   }
 })
+*/
 
 //========= !smolgift ===========
 client.on ("message", message =>{
@@ -199,6 +190,7 @@ client.on ("message", message =>{
   }
 })
 
+/*
 //========= !konaasmr ===========
 var asmrclip = ["https://clips.twitch.tv/WiseHorribleAlmondPMSTwin?tt_medium=clips_api&tt_content=url",
                "https://clips.twitch.tv/DeadSarcasticPuppyKlappa?tt_medium=clips_api&tt_content=url",
@@ -219,6 +211,7 @@ client.on ("message", message =>{
            message.channel.send(asmrclip[Math.floor((Math.random()*asmrIndex))]);
   }
 })
+*/
 
 var messagesResponse = ["*Congratulations, you have discovered the fact people talk.....bitch.*",
                         "*Well done, your deductive skills are on point to find out people socialize when you're not around.....bitch.*",
@@ -244,6 +237,7 @@ client.on ("message", message =>{
   }
 })
 
+/*
 client.on ("message", message =>{
   //Check if the command is being called.
   if(message.content.startsWith("!hunted")) { 
@@ -251,6 +245,7 @@ client.on ("message", message =>{
             message.channel.send("https://gyazo.com/03df66fac27f2d7ab3100bcf44ad3d57");
   }
 })
+*/
 
 //!loveletter + user
 client.on ("message", message =>{
@@ -313,6 +308,7 @@ client.on ("message", message =>{
   }
 })
 
+/*
 //MaggieStatus
    client.on ("message", message =>{
   //Check if the command is being called.
@@ -460,6 +456,7 @@ client.on ("message", message =>{
   }
 )
 
+
 //Toikeylaig
 client.on ("message", message =>{
   //Check if the command is being called.
@@ -568,7 +565,7 @@ client.on ("message", message =>{
             message.channel.send(doggobobsimg[Math.floor((Math.random()*doggobobsimgIndex))]);
   }
 })
-
+*/
 client.on ("message", message =>{
   //Check if the command is being called.
   if(message.content.startsWith("!gay")) { 
@@ -576,7 +573,7 @@ client.on ("message", message =>{
             message.channel.send("https://i.kym-cdn.com/photos/images/original/000/286/095/be7.gif");
   }
 })
-
+/*
 //========= !roast + mentioned user ===========
 //first roast dictionary
 var roast1 = ["your ass must be pretty jealous of all the shit that comes out of your mouth",
@@ -659,7 +656,7 @@ client.on ("message", message =>{
     }
   }
 )
-
+*/
 /*
 //==========ORDER 66 =============
 client.on ("message", message =>{
